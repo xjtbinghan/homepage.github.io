@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>韩冰 | Bing Han's Academic Homepage</title>
+  <meta name="description" content="个人学术主页 - 韩冰，西安交通大学博士生" />
+  <style>
+    :root {
+      --bg: #f2f2f2;
+      --text: #111;
+      --muted: #555;
+      --link: #1a73e8;
+      --border: #d8d8d8;
+      --highlight: #e7ff52;
+      --maxw: 900px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: var(--maxw);
+      margin: 34px auto 70px;
+      padding: 0 28px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.45fr 0.85fr;
+      gap: 42px;
+      align-items: start;
+      margin-bottom: 56px;
+    }
+
+    h1 {
+      font-size: 2.15rem;
+      font-weight: 500;
+      text-align: center;
+      margin: 0 0 24px;
+    }
+
+    .bio p {
+      margin: 0 0 14px;
+      font-size: 1.05rem;
+    }
+
+    .links {
+      margin-top: 18px;
+      text-align: center;
+      font-size: 1.03rem;
+    }
+
+    .portrait-wrap {
+      display: flex;
+      justify-content: center;
+    }
+
+    .portrait {
+      width: 100%;
+      max-width: 300px;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border: 1px solid var(--border);
+      background: #ddd;
+    }
+
+    section {
+      margin-top: 34px;
+    }
+
+    h2 {
+      font-size: 1.95rem;
+      font-weight: 500;
+      margin: 0 0 14px;
+    }
+
+    .news-list {
+      margin: 0;
+      padding-left: 22px;
+      font-size: 1.02rem;
+    }
+
+    .badge-new {
+      display: inline-block;
+      padding: 0 5px;
+      background: var(--highlight);
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .pub-note {
+      margin-bottom: 18px;
+      font-size: 0.98rem;
+    }
+
+    .pub-list {
+      display: flex;
+      flex-direction: column;
+      gap: 34px;
+    }
+
+    .pub-item {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+
+    .pub-thumb {
+      width: 100%;
+      aspect-ratio: 1.7 / 1;
+      object-fit: cover;
+      border: 1px solid var(--border);
+      background: #e8e8e8;
+    }
+
+    .pub-title {
+      font-size: 1.08rem;
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+
+    .pub-authors,
+    .pub-venue,
+    .pub-links,
+    .pub-desc {
+      font-size: 0.99rem;
+    }
+
+    .pub-venue {
+      font-style: italic;
+    }
+
+    .pub-desc {
+      margin-top: 6px;
+    }
+
+    .footer {
+      margin-top: 54px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    @media (max-width: 860px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 22px;
+      }
+
+      .pub-item {
+        grid-template-columns: 1fr;
+      }
+
+      h1, .links {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <div>
+        <h1>韩冰 | Bing Han</h1>
+        <div class="bio">
+          <p>
+            我是西安交通大学未来技术学院的博士生，导师是 <a href="https://scholar.google.com/citations?user=Dnq-8jEAAAAJ&hl=zh-CN">赵志斌教授</a>，我还在银河通用机器人实习，与 <a href="#">李毅教授</a> 有联系。
+          </p>
+          <p>
+            我的研究方向主要涉及 <strong>机器人</strong>、<strong>触觉感知</strong> 和 <strong>具身智能</strong>，重点研究灵巧操作和在复杂真实环境中的接触丰富交互。
+          </p>
+        </div>
+        <div class="links">
+          <a href="mailto:your_email@domain.com">Email</a>
+          /
+          <a href="https://github.com/hanbing" target="_blank">Github</a>
+          /
+          <a href="https://scholar.google.com/citations?user=Dnq-8jEAAAAJ&hl=zh-CN" target="_blank">Google Scholar</a>
+          /
+          <a href="files/BingHan_CV.pdf" target="_blank">CV</a>
+        </div>
+      </div>
+
+      <div class="portrait-wrap">
+        <img class="portrait" src="images/profile.jpg" alt="Profile photo" />
+      </div>
+    </section>
+
+    <section>
+      <h2>News</h2>
+      <ul class="news-list">
+        <li><span class="badge-new">NEW</span> [2026/03] 论文《GeoDexGrasp》被 <strong>CVPR 2026</strong> 接收。</li>
+        <li>[2026/01] 在西安交通大学做 invited talk。</li>
+        <li>[2025/10] 开源了项目主页与代码。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Publications</h2>
+      <div class="pub-note">*: joint first author; †: project lead; ✉: corresponding author(s)</div>
+
+      <div class="pub-list">
+        <article class="pub-item">
+          <img class="pub-thumb" src="images/paper1.jpg" alt="Paper thumbnail 1" />
+          <div>
+            <div class="pub-title">GeoDexGrasp: Geometry-aware Generation for Data-efficient and Physics-plausible Dexterous Grasping</div>
+            <div class="pub-authors"><strong>韩冰</strong>, Yumi Chen, Zhibin Zhao et.al.</div>
+            <div class="pub-venue">Proceedings of CVPR 2026 (Accepted) <a href="GeoDexGrasp">(link)</a></div>
+            <div class="pub-links">
+              <a href="GeoDexGrasp" target="_blank">paper</a> /
+              <a href="#" target="_blank">project page</a> /
+              <a href="#" target="_blank">code</a>
+            </div>
+            <div class="pub-desc">Data-efficient and physics-plausible methods for dexterous grasping generation.</div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <img class="pub-thumb" src="images/paper2.jpg" alt="Paper thumbnail 2" />
+          <div>
+            <div class="pub-title">Ada-VNNs: Adaptive Equivariance for Vector Neural Networks</div>
+            <div class="pub-authors"><strong>韩冰</strong>, Ruitao Pan, Zhibin Zhao et.al.</div>
+            <div class="pub-venue">ECCV 2026 (Accepted) <a href="Ada-VNN">(link)</a></div>
+            <div class="pub-links">
+              <a href="Ada-VNN" target="_blank">paper</a> /
+              <a href="#" target="_blank">project page</a> /
+              <a href="#" target="_blank">code</a>
+            </div>
+            <div class="pub-desc">Introducing adaptive equivariance in vector neural networks for better learning capabilities.</div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <img class="pub-thumb" src="images/paper3.jpg" alt="Paper thumbnail 3" />
+          <div>
+            <div class="pub-title">An Efficient Hybrid Neural Network with Spiking Dynamics Optimization for Event-based Optical Flow Estimation</div>
+            <div class="pub-authors"><strong>韩冰</strong>, Ruitao Pan, Zhibin Zhao et.al.</div>
+            <div class="pub-venue">ECCV 2026 (Submitted) <a href="Event-based 光流估计">(link)</a></div>
+            <div class="pub-links">
+              <a href="Event-based 光流估计" target="_blank">paper</a> /
+              <a href="#" target="_blank">project page</a> /
+              <a href="#" target="_blank">code</a>
+            </div>
+            <div class="pub-desc">Event-based optical flow estimation with an optimized hybrid neural network architecture.</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="footer">
+      © 2026 韩冰. Last updated in March 2026.
+    </div>
+  </div>
+</body>
+</html>
