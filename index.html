@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -174,6 +173,32 @@
         text-align: left;
       }
     }
+
+    .edu-background {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .edu-icon {
+      width: 40px;
+      height: 40px;
+      background-color: #ddd;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 16px;
+    }
+
+    .edu-icon img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .edu-details {
+      font-size: 1rem;
+    }
   </style>
 </head>
 <body>
@@ -186,7 +211,7 @@
             我是西安交通大学未来技术学院的博士生，导师是 <a href="https://scholar.google.com/citations?user=Dnq-8jEAAAAJ&hl=zh-CN">赵志斌教授</a>，我还在银河通用机器人实习，与 <a href="#">李毅教授</a> 有联系。
           </p>
           <p>
-            我的研究方向主要涉及  <strong>几何深度学习</strong>、 <strong>机器人</strong>、<strong>触觉感知</strong> 和 <strong>灵巧手操作</strong>。
+            我的研究方向主要涉及 <strong>几何深度学习</strong>、<strong>机器人</strong>、<strong>触觉感知</strong> 和 <strong>灵巧手操作</strong>。
           </p>
         </div>
         <div class="links">
@@ -233,36 +258,17 @@
             <div class="pub-desc">Data-efficient and physics-plausible methods for dexterous grasping generation.</div>
           </div>
         </article>
+      </div>
+    </section>
 
-        <article class="pub-item">
-          <img class="pub-thumb" src="images/paper2.jpg" alt="Paper thumbnail 2" />
-          <div>
-            <div class="pub-title">Ada-VNNs: Adaptive Equivariance for Vector Neural Networks</div>
-            <div class="pub-authors"><strong>韩冰</strong>, Ruitao Pan, Zhibin Zhao et.al.</div>
-            <div class="pub-venue">ECCV 2026 (Accepted) <a href="Ada-VNN">(link)</a></div>
-            <div class="pub-links">
-              <a href="Ada-VNN" target="_blank">paper</a> /
-              <a href="#" target="_blank">project page</a> /
-              <a href="#" target="_blank">code</a>
-            </div>
-            <div class="pub-desc">Introducing adaptive equivariance in vector neural networks for better learning capabilities.</div>
-          </div>
-        </article>
-
-        <article class="pub-item">
-          <img class="pub-thumb" src="images/paper3.jpg" alt="Paper thumbnail 3" />
-          <div>
-            <div class="pub-title">An Efficient Hybrid Neural Network with Spiking Dynamics Optimization for Event-based Optical Flow Estimation</div>
-            <div class="pub-authors"><strong>韩冰</strong>, Ruitao Pan, Zhibin Zhao et.al.</div>
-            <div class="pub-venue">ECCV 2026 (Submitted) <a href="Event-based 光流估计">(link)</a></div>
-            <div class="pub-links">
-              <a href="Event-based 光流估计" target="_blank">paper</a> /
-              <a href="#" target="_blank">project page</a> /
-              <a href="#" target="_blank">code</a>
-            </div>
-            <div class="pub-desc">Event-based optical flow estimation with an optimized hybrid neural network architecture.</div>
-          </div>
-        </article>
+    <!-- Education Background Section -->
+    <section class="edu-background">
+      <div class="edu-icon">
+        <img src="images/education-icon.png" alt="education icon" />
+      </div>
+      <div class="edu-details">
+        <strong>西安交通大学</strong><br />
+        博士生, 未来技术学院, 2022 - 至今
       </div>
     </section>
 
