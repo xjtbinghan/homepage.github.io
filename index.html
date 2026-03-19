@@ -91,25 +91,6 @@
       margin: 0 0 14px;
     }
 
-    .news-list {
-      margin: 0;
-      padding-left: 22px;
-      font-size: 1.02rem;
-    }
-
-    .badge-new {
-      display: inline-block;
-      padding: 0 5px;
-      background: var(--highlight);
-      font-weight: 700;
-      line-height: 1.2;
-    }
-
-    .pub-note {
-      margin-bottom: 18px;
-      font-size: 0.98rem;
-    }
-
     .pub-list {
       display: flex;
       flex-direction: column;
@@ -162,21 +143,13 @@
       margin-top: 20px;
     }
 
-    .edu-icon {
-      width: 40px;
-      height: 40px;
-      background-color: #ddd;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .edu-logo {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
       margin-right: 16px;
       flex-shrink: 0;
-    }
-
-    .edu-icon img {
-      width: 20px;
-      height: 20px;
+      display: block;
     }
 
     .edu-details {
@@ -240,7 +213,7 @@
           <div>
             <div class="pub-title">GeoDexGrasp: Geometry-aware Generation for Data-efficient and Physics-plausible Dexterous Grasping</div>
             <div class="pub-authors"><strong>Bing Han</strong>, Weiyuan Liu, Zhibin Zhao† et al.</div>
-            <div class="pub-venue">CVPR2026</div>
+            <div class="pub-venue">CVPR 2026</div>
             <div class="pub-links">
               <a href="https://xjtbinghan.github.io/GDG.github.io/" target="_blank">paper</a> /
               <a href="https://xjtbinghan.github.io/GDG.github.io/" target="_blank">project page</a> /
@@ -266,7 +239,7 @@
         <article class="pub-item">
           <img class="pub-thumb" src="images/AEH.png" alt="Paper thumbnail 3" />
           <div>
-            <div class="pub-title">An Efficient Hybrid Neural Ne   twork with Spiking Dynamics Optimization for Event-based Optical Flow Estimation</div>
+            <div class="pub-title">An Efficient Hybrid Neural Network with Spiking Dynamics Optimization for Event-based Optical Flow Estimation</div>
             <div class="pub-authors">Ruitao Pan*, <strong>Bing Han*</strong>, Zhibin Zhao, Chenxi Wang† et al.</div>
             <div class="pub-venue">(in submission)</div>
             <div class="pub-links">
@@ -296,20 +269,20 @@
           <div>
             <div class="pub-title">Learning Upright and Forward-Facing Object Poses using Category-level Canonical Representations</div>
             <div class="pub-authors"><strong>Bing Han</strong>, Ruitao Pan, Zhi Zhai, Zhibin Zhao†, Xuefeng Chen et al.</div>
-            <div class="pub-venue">IROS2025</div>
+            <div class="pub-venue">IROS 2025</div>
             <div class="pub-links">
               <a href="https://ieeexplore.ieee.org/abstract/document/11246355" target="_blank">paper</a> /
               <a href="https://iamie-vision.github.io/upright-forward-facing/" target="_blank">project page</a> /
               <a href="https://iamie-vision.github.io/upright-forward-facing/" target="_blank">code</a>
             </div>
-            </div>
+          </div>
         </article>
 
         <article class="pub-item">
           <img class="pub-thumb" src="images/taes.png" alt="Paper thumbnail 6" />
           <div>
             <div class="pub-title">Pose Estimation and Neural Implicit Reconstruction Towards Noncooperative Spacecraft Without Offline Prior Information</div>
-            <div class="pub-authors"><strong>Bing Han</strong>, Zhizhai, Chenxi Wang†, et al.</div>
+            <div class="pub-authors"><strong>Bing Han</strong>, Zhi Zhai, Chenxi Wang†, et al.</div>
             <div class="pub-venue">IEEE Transactions on Aerospace and Electronic Systems (T-AES), JCR Q1, 2024</div>
             <div class="pub-links">
               <a href="https://ieeexplore.ieee.org/document/10715656" target="_blank">paper</a> /
@@ -337,7 +310,7 @@
           <img class="pub-thumb" src="images/m21.png" alt="Paper thumbnail 8" />
           <div>
             <div class="pub-title">M²Former: Enhancing Event-Based RT-DETR for Robust and Lightweight Space Object Detection</div>
-            <div class="pub-authors">Ruitao Pan, <strong>Bing Han</strong>  Chenxi Wang† et al.</div>
+            <div class="pub-authors">Ruitao Pan, <strong>Bing Han</strong>, Chenxi Wang† et al.</div>
             <div class="pub-venue">IEEE Transactions on Geoscience and Remote Sensing (TGRS), JCR Q1, 2025</div>
             <div class="pub-links">
               <a href="https://ieeexplore.ieee.org/document/11263950" target="_blank">paper</a> /
@@ -351,8 +324,8 @@
           <img class="pub-thumb" src="images/AEI.png" alt="Paper thumbnail 9" />
           <div>
             <div class="pub-title">Vision-Language-Action Model Enabling Continuum Robots in Aeroengine Blade In-Situ Inspection</div>
-            <div class="pub-authors">Shaoxuan Suo, Changlong Zhang, <strong>Bing Han</strong>  Jinxin Liu† et al.</div>
-            <div class="pub-venue">Advanced Engineering Informatics (AEI) JCR Q1, 2025</div>
+            <div class="pub-authors">Shaoxuan Suo, Changlong Zhang, <strong>Bing Han</strong>, Jinxin Liu† et al.</div>
+            <div class="pub-venue">Advanced Engineering Informatics (AEI), JCR Q1, 2025</div>
             <div class="pub-links">
               <a href="https://www.researchgate.net/publication/393682704_Vision-Language-Action_Model_Enabling_Continuum_Robots_in_Aeroengine_Blade_In-Situ_Inspection" target="_blank">paper</a> /
               <a href="#" target="_blank">project page</a> /
@@ -366,21 +339,17 @@
     <section class="edu-section">
       <h2>Work Experience</h2>
       <div class="edu-item">
-        <div class="edu-icon">
-          <img src="images/galbot.png" alt="Education icon" />
-        </div>
+        <img class="edu-logo" src="images/galbot.png" alt="GALBOT logo" />
         <div class="edu-details">
           <strong>GALBOT</strong><br />
-          Algorithm for Dexterous Hand, 2025.11 - Present
+          Algorithm for Dexterous Hand, Nov 2025 - Present
         </div>
       </div>
-      
+
       <h2>Education</h2>
 
       <div class="edu-item">
-        <div class="edu-icon">
-          <img src="images/xjtu.png" alt="Education icon" />
-        </div>
+        <img class="edu-logo" src="images/xjtu.png" alt="Xi'an Jiaotong University logo" />
         <div class="edu-details">
           <strong>Xi'an Jiaotong University</strong><br />
           Ph.D. Student, 2022 - Present
@@ -388,9 +357,7 @@
       </div>
 
       <div class="edu-item">
-        <div class="edu-icon">
-          <img src="images/whut.png" alt="Education icon" />
-        </div>
+        <img class="edu-logo" src="images/whut.png" alt="Wuhan University of Technology logo" />
         <div class="edu-details">
           <strong>Wuhan University of Technology</strong><br />
           B.Eng. Student, 2018 - 2022
