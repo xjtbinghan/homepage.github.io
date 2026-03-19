@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>韩冰 | Bing Han's Academic Homepage</title>
-  <meta name="description" content="个人学术主页 - 韩冰，西安交通大学博士生" />
+  <title>Bing Han | Academic Homepage</title>
+  <meta name="description" content="Academic homepage of Bing Han, Ph.D. student at Xi'an Jiaotong University" />
   <style>
     :root {
       --bg: #f2f2f2;
@@ -152,6 +152,37 @@
       margin-top: 6px;
     }
 
+    .edu-section {
+      margin-top: 40px;
+    }
+
+    .edu-item {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .edu-icon {
+      width: 40px;
+      height: 40px;
+      background-color: #ddd;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 16px;
+      flex-shrink: 0;
+    }
+
+    .edu-icon img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .edu-details {
+      font-size: 1rem;
+    }
+
     .footer {
       margin-top: 54px;
       text-align: center;
@@ -173,50 +204,27 @@
         text-align: left;
       }
     }
-
-    .edu-background {
-      display: flex;
-      align-items: center;
-      margin-top: 30px;
-    }
-
-    .edu-icon {
-      width: 40px;
-      height: 40px;
-      background-color: #ddd;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-right: 16px;
-    }
-
-    .edu-icon img {
-      width: 20px;
-      height: 20px;
-    }
-
-    .edu-details {
-      font-size: 1rem;
-    }
   </style>
 </head>
 <body>
   <div class="container">
     <section class="hero">
       <div>
-        <h1>韩冰 | Bing Han</h1>
+        <h1>Bing Han</h1>
         <div class="bio">
           <p>
-            我是西安交通大学未来技术学院的博士生，导师是 <a href="https://scholar.google.com/citations?user=Dnq-8jEAAAAJ&hl=zh-CN">赵志斌教授</a>，我还在银河通用机器人实习，与 <a href="https://iiis.tsinghua.edu.cn/rydw/qzjs/yili.htm">弋力教授</a> 有联系。
+            I am a Ph.D. student at the School of Future Technology, Xi'an Jiaotong University, advised by
+            <a href="https://scholar.google.com/citations?user=Dnq-8jEAAAAJ&hl=zh-CN" target="_blank">Prof. Zhibin Zhao</a>.
+            I am also an intern at Galbot and have academic connections with
+            <a href="https://iiis.tsinghua.edu.cn/rydw/qzjs/yili.htm" target="_blank">Prof. Li Yi</a>.
           </p>
           <p>
-            我的研究方向主要涉及 <strong>机器人灵巧操作</strong> 和 <strong>3D视觉</strong>。
+            My research interests mainly include <strong>dexterous robotic manipulation</strong> and <strong>3D vision</strong>.
           </p>
         </div>
         <div class="links">
-          <a href="binghan8860@163.com">Email</a>
-          /
+          <a href="mailto:binghan8860@163.com">Email</a>
+        </div>
       </div>
 
       <div class="portrait-wrap">
@@ -225,18 +233,9 @@
     </section>
 
     <section>
-      <h2>News</h2>
-      <ul class="news-list">
-        <li><span class="badge-new">NEW</span> [2026/03] 论文《GeoDexGrasp》被 <strong>CVPR 2026</strong> 接收。</li>
-        <li>[2026/01] 在西安交通大学做 invited talk。</li>
-        <li>[2025/10] 开源了项目主页与代码。</li>
-      </ul>
-    </section>
-
-    <section>
       <h2>Publications</h2>
       <div class="pub-note">*: joint first author; †: project lead; ✉: corresponding author(s)</div>
-    
+
       <div class="pub-list">
         <article class="pub-item">
           <img class="pub-thumb" src="images/paper1.jpg" alt="Paper thumbnail 1" />
@@ -249,55 +248,52 @@
               <a href="#" target="_blank">project page</a> /
               <a href="#" target="_blank">code</a>
             </div>
-            <div class="pub-desc">具备几何感知的灵巧手抓取动作生成。<strong>CVPR（一作）</strong></div>
+            <div class="pub-desc"><strong>CVPR</strong></div>
           </div>
         </article>
-    
+
         <article class="pub-item">
           <img class="pub-thumb" src="images/paper2.jpg" alt="Paper thumbnail 2" />
           <div>
             <div class="pub-title">Ada-VNNs: Adaptive Equivariance for Vector Neural Networks</div>
             <div class="pub-authors"><strong>Bing Han</strong>, Ruitao Pan, Zhibin Zhao et al.</div>
-            <div class="pub-venue">The 19th European Conference on Computer Vision (in submission), 2026</div>
+            <div class="pub-venue">(in submission)</div>
             <div class="pub-links">
               <a href="#" target="_blank">paper</a> /
               <a href="#" target="_blank">project page</a> /
               <a href="#" target="_blank">code</a>
             </div>
-            <div class="pub-desc">嵌入几何先验的点云神经网络。<strong>ECCV（一作）</strong></div>
           </div>
         </article>
-    
+
         <article class="pub-item">
           <img class="pub-thumb" src="images/paper3.jpg" alt="Paper thumbnail 3" />
           <div>
             <div class="pub-title">An Efficient Hybrid Neural Network with Spiking Dynamics Optimization for Event-based Optical Flow Estimation</div>
             <div class="pub-authors">Ruitao Pan, <strong>Bing Han</strong>, Zhibin Zhao et al.</div>
-            <div class="pub-venue">The 19th European Conference on Computer Vision (in submission), 2026</div>
+            <div class="pub-venue">(in submission)</div>
             <div class="pub-links">
               <a href="#" target="_blank">paper</a> /
               <a href="#" target="_blank">project page</a> /
               <a href="#" target="_blank">code</a>
             </div>
-            <div class="pub-desc">Event-based 光流估计。<strong>ECCV（共一）</strong></div>
           </div>
         </article>
-    
+
         <article class="pub-item">
           <img class="pub-thumb" src="images/paper4.jpg" alt="Paper thumbnail 4" />
           <div>
             <div class="pub-title">SpacePolicy: Dynamics-Aware Imitation Learning for Free-Floating On-Orbit Capture</div>
             <div class="pub-authors"><strong>Bing Han</strong>, Ruitao Pan, Xuefeng Chen et al.</div>
-            <div class="pub-venue">2026 IEEE/RSJ International Conference on Intelligent Robots and Systems, 2026.03</div>
+            <div class="pub-venue">(in submission)</div>
             <div class="pub-links">
               <a href="#" target="_blank">paper</a> /
               <a href="#" target="_blank">project page</a> /
               <a href="#" target="_blank">code</a>
             </div>
-            <div class="pub-desc">动态环境下的抓取 Policy。<strong>IROS（一作）</strong></div>
           </div>
         </article>
-    
+
         <article class="pub-item">
           <img class="pub-thumb" src="images/paper5.jpg" alt="Paper thumbnail 5" />
           <div>
@@ -309,10 +305,10 @@
               <a href="#" target="_blank">project page</a> /
               <a href="#" target="_blank">code</a>
             </div>
-            <div class="pub-desc">SE(3) 等变表征用于机器人摆正物体姿态。<strong>IROS（一作）</strong></div>
+            <div class="pub-desc">SE(3)-equivariant representations for robotic object pose alignment. <strong>IROS (first author)</strong></div>
           </div>
         </article>
-    
+
         <article class="pub-item">
           <img class="pub-thumb" src="images/paper6.jpg" alt="Paper thumbnail 6" />
           <div>
@@ -324,10 +320,10 @@
               <a href="#" target="_blank">project page</a> /
               <a href="#" target="_blank">code</a>
             </div>
-            <div class="pub-desc">使用在线位姿图优化和 NeRF 对未知航天器位姿估计和形状重建。<strong>T-AES, JCR Q1, 2区 Top（一作）</strong></div>
+            <div class="pub-desc"><strong>T-AES, JCR Q1</strong></div>
           </div>
         </article>
-    
+
         <article class="pub-item">
           <img class="pub-thumb" src="images/paper7.jpg" alt="Paper thumbnail 7" />
           <div>
@@ -339,10 +335,10 @@
               <a href="#" target="_blank">project page</a> /
               <a href="#" target="_blank">code</a>
             </div>
-            <div class="pub-desc">利用归一化坐标空间进行类别级航天器位姿估计。<strong>T-AES, JCR Q1, 2区 Top（二作）</strong></div>
+            <div class="pub-desc"><strong>T-AES, JCR Q1</strong></div>
           </div>
         </article>
-    
+
         <article class="pub-item">
           <img class="pub-thumb" src="images/paper8.jpg" alt="Paper thumbnail 8" />
           <div>
@@ -354,10 +350,10 @@
               <a href="#" target="_blank">project page</a> /
               <a href="#" target="_blank">code</a>
             </div>
-            <div class="pub-desc">第一个空间场景的事件相机开源数据集。<strong>TGRS, JCR Q1, 1区 Top（三作）</strong></div>
+            <div class="pub-desc"><strong>TGRS, JCR Q1</strong></div>
           </div>
         </article>
-    
+
         <article class="pub-item">
           <img class="pub-thumb" src="images/paper9.jpg" alt="Paper thumbnail 9" />
           <div>
@@ -369,40 +365,38 @@
               <a href="#" target="_blank">project page</a> /
               <a href="#" target="_blank">code</a>
             </div>
-            <div class="pub-desc">连续体机器人 VLA。<strong>AEI, JCR Q1, 1区 Top（三作）</strong></div>
-          </div>
-        </article>
-    
-        <article class="pub-item">
-          <img class="pub-thumb" src="images/paper10.jpg" alt="Paper thumbnail 10" />
-          <div>
-            <div class="pub-title">AFNet: Attention-Based Adaptive Feature Fusion and Frequency-Domain Refinement for Stereo Matching</div>
-            <div class="pub-authors">Shaoxuan Suo, Jinxin Liu, <strong>Bing Han</strong> et al.</div>
-            <div class="pub-venue">Displays, 2025.01</div>
-            <div class="pub-links">
-              <a href="#" target="_blank">paper</a> /
-              <a href="#" target="_blank">project page</a> /
-              <a href="#" target="_blank">code</a>
-            </div>
-            <div class="pub-desc">通过增强高频信息表征缓解立体匹配的细化问题。<strong>JCR Q1, 2区（三作）</strong></div>
+            <div class="pub-desc"><strong>AEI, JCR Q1</strong></div>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- Education Background Section -->
-    <section class="edu-background">
-      <div class="edu-icon">
-        <img src="images/education-icon.png" alt="education icon" />
+    <section class="edu-section">
+      <h2>Education</h2>
+
+      <div class="edu-item">
+        <div class="edu-icon">
+          <img src="images/education-icon.png" alt="Education icon" />
+        </div>
+        <div class="edu-details">
+          <strong>Xi'an Jiaotong University</strong><br />
+          Ph.D. Student, 2022 - Present
+        </div>
       </div>
-      <div class="edu-details">
-        <strong>西安交通大学</strong><br />
-        博士生, 未来技术学院, 2022 - 至今
+
+      <div class="edu-item">
+        <div class="edu-icon">
+          <img src="images/education-icon.png" alt="Education icon" />
+        </div>
+        <div class="edu-details">
+          <strong>Wuhan University of Technology</strong><br />
+          B.Eng. Student, 2018 - 2022
+        </div>
       </div>
     </section>
 
     <div class="footer">
-      © 2026 韩冰. Last updated in March 2026.
+      © 2026 Bing Han. Last updated in March 2026.
     </div>
   </div>
 </body>
